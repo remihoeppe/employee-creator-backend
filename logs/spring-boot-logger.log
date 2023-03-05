@@ -1,0 +1,37 @@
+2023-03-06 08:45:17,402 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 8.0.0.Final
+2023-03-06 08:45:17,456 INFO org.springframework.boot.StartupInfoLogger [main] Starting App using Java 17.0.1 with PID 78641 (/Users/remi/Desktop/employeeCreator-backend/target/classes started by remi in /Users/remi/Desktop/employeeCreator-backend)
+2023-03-06 08:45:17,457 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-03-06 08:45:18,298 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-06 08:45:18,347 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 40 ms. Found 1 JPA repository interfaces.
+2023-03-06 08:45:18,841 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2023-03-06 08:45:18,850 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2023-03-06 08:45:18,851 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2023-03-06 08:45:18,851 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-03-06 08:45:18,929 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-03-06 08:45:18,931 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1417 ms
+2023-03-06 08:45:19,126 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-06 08:45:19,177 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-03-06 08:45:19,444 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2023-03-06 08:45:19,764 INFO com.zaxxer.hikari.pool.HikariPool [main] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@269c7104
+2023-03-06 08:45:19,766 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-03-06 08:45:19,786 WARN org.hibernate.dialect.Dialect [main] HHH000511: The 5.0.0 version for [org.hibernate.dialect.MySQL5Dialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 5.7.0. Check the community dialects project for available legacy versions.
+2023-03-06 08:45:19,788 INFO org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2023-03-06 08:45:19,789 WARN org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl [main] HHH90000026: MySQL5Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-03-06 08:45:20,587 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [main] drop table if exists employee
+2023-03-06 08:45:20,648 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [main] create table employee (id bigint not null auto_increment, address varchar(255), contract_type varchar(255), deleted bit, email varchar(255), end_date date, first_name varchar(255), last_name varchar(255), middle_name varchar(255), mobile_number varchar(255), start_date date, time_base varchar(255), weekly_hours varchar(255), primary key (id)) engine=MyISAM
+2023-03-06 08:45:20,684 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-06 08:45:20,692 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-06 08:45:21,045 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-06 08:45:21,418 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [main] Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-03-06 08:45:21,468 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2023-03-06 08:45:21,485 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-06 08:45:21,498 INFO org.springframework.boot.StartupInfoLogger [main] Started App in 4.57 seconds (process running for 5.021)
+2023-03-06 08:45:21,560 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [main] insert into employee (address, contract_type, deleted, email, end_date, first_name, last_name, middle_name, mobile_number, start_date, time_base, weekly_hours) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2023-03-06 08:45:21,585 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [main] insert into employee (address, contract_type, deleted, email, end_date, first_name, last_name, middle_name, mobile_number, start_date, time_base, weekly_hours) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2023-03-06 08:45:21,588 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [main] insert into employee (address, contract_type, deleted, email, end_date, first_name, last_name, middle_name, mobile_number, start_date, time_base, weekly_hours) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2023-03-06 08:45:21,590 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [main] insert into employee (address, contract_type, deleted, email, end_date, first_name, last_name, middle_name, mobile_number, start_date, time_base, weekly_hours) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2023-03-06 08:45:26,838 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-06 08:45:26,838 INFO org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl [SpringApplicationShutdownHook] HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-03-06 08:45:26,839 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [SpringApplicationShutdownHook] drop table if exists employee
+2023-03-06 08:45:26,849 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-03-06 08:45:26,855 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
