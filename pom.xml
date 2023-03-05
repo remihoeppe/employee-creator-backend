@@ -151,3 +151,10 @@
 <!--		&#45;&#45;builder paketobuildpacks/builder:base \-->
 <!--		&#45;&#45;path ./ \-->
 <!--		&#45;&#45;env "BP_JVM_VERSION=17"-->
+
+<!--		pack build ghcr.io/employee-creator-image:latest \-->
+<!--		&#45;&#45;builder paketobuildpacks/builder:base \-->
+<!--		&#45;&#45;path . \-->
+<!--		&#45;&#45;env "BP_OCI_SOURCE=https://github.com/remihoeppe/employee-creator-backend" \-->
+<!--		&#45;&#45;env "BP_JVM_VERSION=17" \-->
+<!--		&#45;&#45;publish-->
