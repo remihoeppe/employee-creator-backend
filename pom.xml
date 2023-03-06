@@ -158,3 +158,5 @@
 <!--		&#45;&#45;env "BP_OCI_SOURCE=https://github.com/remihoeppe/employee-creator-backend" \-->
 <!--		&#45;&#45;env "BP_JVM_VERSION=17" \-->
 <!--		&#45;&#45;publish-->
+
+<!--		fly launch &#45;&#45;image ghcr.io/employee-creator-image:latest-->
